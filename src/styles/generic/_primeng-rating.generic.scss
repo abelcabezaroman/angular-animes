@@ -1,0 +1,10 @@
+.g-primeng-rating {
+  .p-rating .p-rating-icon {
+    color: #c62d2d;
+    font-size: .75rem;
+
+  }
+  .p-rating:not(.p-disabled):not(.p-readonly) .p-rating-icon:hover {
+    color: #760800;
+  }
+}

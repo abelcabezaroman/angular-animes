@@ -1,0 +1,14 @@
+<div class="c-gallery">
+  <div class="row">
+    <div class="col-12 col-lg-2" *ngFor="let item of list">
+    <figure class="c-gallery__item" >
+      <img
+        src="{{ item.attributes.posterImage.original }}"
+        alt="{{ item.attributes.canonicalTitle }}"
+      />
+      <figcaption>{{ item.attributes.canonicalTitle }}</figcaption>
+      <p-rating class="g-primeng-rating" [cancel]="false" [(ngModel)]="item.attributes.averageRating" [stars]="10"></p-rating>
+    </figure>
+  </div>
+  </div>
+</div>

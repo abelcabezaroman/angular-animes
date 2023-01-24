@@ -7,8 +7,8 @@ import { Injectable } from '@angular/core';
 export class AnimesService {
   constructor(private http: HttpClient) {}
 
-  getAnimes() {
-    return this.http.get("https://kitsu.io/api/edge/trending/anime?limit=6")
+  getAnimes(filter = "trending/anime?limit=6") {
+    return this.http.get("https://kitsu.io/api/edge/" + filter)
   }
 
   // getAnime() {}

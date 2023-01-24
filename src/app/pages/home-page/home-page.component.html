@@ -1,2 +1,10 @@
 <h2>Animes populares esta semana</h2>
-<app-gallery [list]="animes"></app-gallery>
+<app-gallery [list]="animes.animesTrending"></app-gallery>
+<h2>Animes populares en emisión</h2>
+<app-gallery [list]="animes.animesPopEm"></app-gallery>
+<h2>Animes más buscados</h2>
+<app-gallery [list]="animes.animesMostWanted"></app-gallery>
+<h2>Animes con mejor puntuación</h2>
+<app-gallery [list]="animes.animesAvg"></app-gallery>
+<h2>Animes más populares</h2>
+<app-gallery [list]="animes.animesPop"></app-gallery>

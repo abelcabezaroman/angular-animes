@@ -1,10 +1,12 @@
-<h2>Animes populares esta semana</h2>
-<app-gallery [list]="animes.animesTrending"></app-gallery>
-<h2>Animes populares en emisión</h2>
-<app-gallery [list]="animes.animesPopEm"></app-gallery>
-<h2>Animes más buscados</h2>
-<app-gallery [list]="animes.animesMostWanted"></app-gallery>
-<h2>Animes con mejor puntuación</h2>
-<app-gallery [list]="animes.animesAvg"></app-gallery>
-<h2>Animes más populares</h2>
-<app-gallery [list]="animes.animesPop"></app-gallery>
+<div *ngIf="animes.length > 0">
+  <h2>Animes populares esta semana</h2>
+  <app-gallery [list]="animes[0]"></app-gallery>
+  <h2>Animes populares en emisión</h2>
+  <app-gallery [list]="animes[1]"></app-gallery>
+  <h2>Animes más buscados</h2>
+  <app-gallery [list]="animes[2]"></app-gallery>
+  <h2>Animes con mejor puntuación</h2>
+  <app-gallery [list]="animes[3]"></app-gallery>
+  <h2>Animes más populares</h2>
+  <app-gallery [list]="animes[4]"></app-gallery>
+</div>

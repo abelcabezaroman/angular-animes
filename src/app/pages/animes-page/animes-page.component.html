@@ -1,5 +1,7 @@
 <input type="text" [(ngModel)]="searchText">
+<h5>Range: {{years[0] + ' - ' + years[1]}}</h5>
+<p-slider [(ngModel)]="years" [range]="true" [min]="1907" [max]="2023"></p-slider>
 
-<button (click)="search(searchText)">Buscar</button>
+<button (click)="search(searchText, years)">Buscar</button>
 
 <app-gallery [list]="animes"></app-gallery>

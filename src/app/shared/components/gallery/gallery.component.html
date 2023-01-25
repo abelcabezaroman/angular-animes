@@ -8,7 +8,7 @@
             alt="{{ item.attributes.canonicalTitle }}"
           />
         </div>
-        <figcaption>{{ item.attributes.canonicalTitle }}</figcaption>
+        <figcaption>{{ item.attributes.canonicalTitle | customName:"-"}}</figcaption>
         <p-rating
           class="g-primeng-rating"
           [cancel]="false"

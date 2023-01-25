@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {SliderModule} from 'primeng/slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import {RatingModule} from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { LoadingComponent } from './shared/components/loading/loading.component';
+import { CustomNamePipe } from './shared/pipes/custom-name.pipe';
+import { BtnComponent } from './shared/components/btn/btn.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,17 @@ import { LoadingComponent } from './shared/components/loading/loading.component'
     HeaderComponent,
     GalleryComponent,
     ContactPageComponent,
-    LoadingComponent
+    LoadingComponent,
+    CustomNamePipe,
+    BtnComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RatingModule
+    RatingModule,
+    SliderModule
 
   ],
   providers: [],

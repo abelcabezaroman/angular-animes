@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import {RatingModule} from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { LoadingComponent } from './shared/components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     HomePageComponent,
     AnimesPageComponent,
     HeaderComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactPageComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

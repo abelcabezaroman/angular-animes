@@ -1,5 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AnimeInterface } from 'src/app/shared/models/Anime.interface';
 import { AnimesService } from 'src/app/shared/services/animes.service';
 
 @Component({
@@ -9,10 +8,12 @@ import { AnimesService } from 'src/app/shared/services/animes.service';
 })
 export class HomePageComponent implements OnInit, OnDestroy {
   animes :any= {};
+
   constructor(private animesService: AnimesService) {}
 
   ngOnInit() {
     console.log('Me creo');
+
     this.getAnimes('trending/anime?limit=6', 'animesTrending');
     this.getAnimes(
       'anime?filter%5Bstatus%5D=current&page%5Blimit%5D=6&sort=-user_count',
